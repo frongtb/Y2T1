@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Digi\Test\firstTest.ncd
+OUTFILE=C:\Digi\Test\firstTest.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Digi\Test
+LICENSE=WebPack
+USER_INFO=__0_0_0
