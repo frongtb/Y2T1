@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Digi/dice/newtest.xst" -ofn "C:/Digi/dice/newtest.syr" 
