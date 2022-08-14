@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Digi/ffcountingItoVI/ffcount.xst" -ofn "C:/Digi/ffcountingItoVI/ffcount.syr" 

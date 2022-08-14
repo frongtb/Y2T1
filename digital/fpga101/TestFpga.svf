@@ -1,0 +1,16 @@
+// Created using Xilinx Cse Software [ISE - 14.7]
+// Date: Tue Nov 09 19:14:53 2021
+
+TRST OFF;
+ENDIR IDLE;
+ENDDR IDLE;
+STATE RESET;
+STATE IDLE;
+FREQUENCY 1E6 HZ;
+//Operation: Play 
+TIR 0 ;
+HIR 0 ;
+TDR 0 ;
+HDR 0 ;
+ENDIR IDLE;
+ENDDR IDLE;
