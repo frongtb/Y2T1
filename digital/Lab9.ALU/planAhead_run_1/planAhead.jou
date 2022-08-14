@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Nov 12 00:57:34 2021
+# Process ID: 10816
+# Log file: C:/work/Digital/lab9/Lab9.ALU/planAhead_run_1/planAhead.log
+# Journal file: C:/work/Digital/lab9/Lab9.ALU/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/work/Digital/lab9/Lab9.ALU/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
