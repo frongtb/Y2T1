@@ -1,0 +1,10 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/Plus.vhf,-w,C:/Digi/Lab9.ALU/Plus.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/ALUselect.vhf,-w,C:/Digi/Lab9.ALU/ALUselect.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/HEXto7Seg.vhf,-w,C:/Digi/Lab9.ALU/HEXto7Seg.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/HEXto7Seg2Digit.vhf,-w,C:/Digi/Lab9.ALU/HEXto7Seg2Digit.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/ALU.vhf,-w,C:/Digi/Lab9.ALU/ALU.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/main.vhf,-w,C:/Digi/Lab9.ALU/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/ALUselect.vhf,-w,C:/Digi/Lab9.ALU/ALUselect.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/HEXto7Seg2Digit.vhf,-w,C:/Digi/Lab9.ALU/HEXto7Seg2Digit.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/ALU.vhf,-w,C:/Digi/Lab9.ALU/ALU.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-flat,-suppress,-vhdl,C:/Digi/Lab9.ALU/main.vhf,-w,C:/Digi/Lab9.ALU/main.sch
