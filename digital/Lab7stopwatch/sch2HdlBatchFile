@@ -1,0 +1,5 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/main.vf,-w,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.vf,-w,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Clock_MM_SS_2.vf,-w,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Clock_MM_SS_2.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/main.vf,-w,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.vf,-w,C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sch

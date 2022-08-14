@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family spartan6 -verilog ClockControl_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockControl.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog ClockControl_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockControl.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog ClockControl_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockControl.sch 
+sch2sym -intstyle ise -family spartan6 -refsym ClockControl C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockControl.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockControl.sym 

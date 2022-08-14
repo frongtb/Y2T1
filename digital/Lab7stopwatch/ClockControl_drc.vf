@@ -1,0 +1,79 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ClockControl_drc.vf
+// /___/   /\     Timestamp : 11/19/2021 16:27:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog ClockControl_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockControl.sch
+//Design Name: ClockControl
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_ClockControl(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module ClockControl(CLK_1s, 
+                    Control, 
+                    RST_in, 
+                    CLK_out, 
+                    RST_out);
+
+    input CLK_1s;
+    input Control;
+    input RST_in;
+   output CLK_out;
+   output RST_out;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   AND2  XLXI_1 (.I0(CLK_1s), 
+                .I1(XLXN_1), 
+                .O(CLK_out));
+   AND2  XLXI_2 (.I0(RST_in), 
+                .I1(XLXN_2), 
+                .O(RST_out));
+   (* HU_SET = "XLXI_9_0" *) 
+   FTC_HXILINX_ClockControl  XLXI_9 (.C(Control), 
+                                    .CLR(XLXN_4), 
+                                    .T(XLXN_3), 
+                                    .Q(XLXN_1));
+   INV  XLXI_10 (.I(XLXN_1), 
+                .O(XLXN_2));
+   VCC  XLXI_11 (.P(XLXN_3));
+   GND  XLXI_12 (.G(XLXN_4));
+endmodule

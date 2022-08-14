@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Div1k_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Div1k_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Div1k_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Div1k C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Div1k_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Div1k_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Div1k C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div1k C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/Div1k.sym 

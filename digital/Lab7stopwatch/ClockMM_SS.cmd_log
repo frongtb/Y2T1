@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -verilog ClockMM_SS_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockMM_SS.sch 
+sch2sym -intstyle ise -family spartan6 -refsym ClockMM_SS C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockMM_SS.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockMM_SS.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ClockMM_SS C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockMM_SS.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/ClockMM_SS.sym 

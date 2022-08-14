@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family spartan6 -verilog StopWatch_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sch 
+sch2sym -intstyle ise -family spartan6 -refsym StopWatch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog StopWatch_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym StopWatch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym StopWatch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog StopWatch_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym StopWatch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/StopWatch.sym 
