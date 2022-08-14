@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Digi\Ex_2\katerm.ncd
+OUTFILE=C:\Digi\Ex_2\katerm.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Digi\Ex_2
+LICENSE=WebPack
+USER_INFO=__0_0_0

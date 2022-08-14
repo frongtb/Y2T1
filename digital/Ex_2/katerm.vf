@@ -1,0 +1,89 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : katerm.vf
+// /___/   /\     Timestamp : 11/23/2021 14:45:15
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Digi/Ex_2/katerm.vf -w C:/Digi/Ex_2/katerm.sch
+//Design Name: katerm
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module katerm(a, 
+              b, 
+              c, 
+              d, 
+              PA, 
+              PaF, 
+              seg0, 
+              seg1, 
+              seg2, 
+              seg3, 
+              u, 
+              v, 
+              x, 
+              y, 
+              z);
+
+    input a;
+    input b;
+    input c;
+    input d;
+   output PA;
+   output PaF;
+   output seg0;
+   output seg1;
+   output seg2;
+   output seg3;
+   output u;
+   output v;
+   output x;
+   output y;
+   output z;
+   
+   wire paid;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_44;
+   wire XLXN_57;
+   wire XLXN_73;
+   wire PA_DUMMY;
+   
+   assign PA = PA_DUMMY;
+   INV  XLXI_1 (.I(a), 
+               .O(XLXN_41));
+   INV  XLXI_2 (.I(b), 
+               .O(paid));
+   INV  XLXI_3 (.I(c), 
+               .O(XLXN_44));
+   INV  XLXI_4 (.I(d), 
+               .O(XLXN_42));
+   VCC  XLXI_24 (.P(XLXN_57));
+   AND2  XLXI_25 (.I0(XLXN_57), 
+                 .I1(paid), 
+                 .O(PA_DUMMY));
+   GND  XLXI_29 (.G(v));
+   AND2  XLXI_35 (.I0(XLXN_73), 
+                 .I1(PA_DUMMY), 
+                 .O(PaF));
+   VCC  XLXI_36 (.P(XLXN_73));
+   VCC  XLXI_37 (.P(u));
+   VCC  XLXI_38 (.P(z));
+   VCC  XLXI_39 (.P(y));
+   VCC  XLXI_40 (.P(x));
+   VCC  XLXI_42 (.P(seg2));
+   VCC  XLXI_43 (.P(seg3));
+   VCC  XLXI_44 (.P(seg1));
+   GND  XLXI_45 (.G(seg0));
+endmodule
