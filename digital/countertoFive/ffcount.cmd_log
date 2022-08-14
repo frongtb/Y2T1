@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym ffcount C:/Digi/ffcountingItoVI/ffcount.sch C:/Digi/countertoFive/ffcount.sym 

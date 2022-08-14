@@ -1,0 +1,5 @@
+MODULE main
+	SUBMODULE ffcount
+		INSTANCE XLXI_2
+	SUBMODULE bcdtosevenseg
+		INSTANCE XLXI_4

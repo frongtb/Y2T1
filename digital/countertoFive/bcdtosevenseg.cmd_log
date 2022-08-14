@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym bcdtosevenseg C:/Digi/countertoFive/bcdtosevenseg.sch C:/Digi/countertoFive/bcdtosevenseg.sym 

@@ -1,0 +1,107 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ffcount.vf
+// /___/   /\     Timestamp : 11/22/2021 18:57:12
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Digi/countertoFive/ffcount.vf -w C:/Digi/ffcountingItoVI/ffcount.sch
+//Design Name: ffcount
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_ffcount(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module ffcount(CLK, 
+               x, 
+               y, 
+               z);
+
+    input CLK;
+   output x;
+   output y;
+   output z;
+   
+   wire XLXN_1;
+   wire XLXN_9;
+   wire XLXN_13;
+   wire XLXN_18;
+   wire x_DUMMY;
+   wire y_DUMMY;
+   wire z_DUMMY;
+   
+   assign x = x_DUMMY;
+   assign y = y_DUMMY;
+   assign z = z_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   FJKC_HXILINX_ffcount  XLXI_1 (.C(CLK), 
+                                .CLR(XLXN_1), 
+                                .J(x_DUMMY), 
+                                .K(XLXN_9), 
+                                .Q(y_DUMMY));
+   (* HU_SET = "XLXI_2_1" *) 
+   FJKC_HXILINX_ffcount  XLXI_2 (.C(CLK), 
+                                .CLR(XLXN_1), 
+                                .J(XLXN_13), 
+                                .K(y_DUMMY), 
+                                .Q(z_DUMMY));
+   (* HU_SET = "XLXI_3_2" *) 
+   FJKC_HXILINX_ffcount  XLXI_3 (.C(CLK), 
+                                .CLR(XLXN_1), 
+                                .J(XLXN_18), 
+                                .K(XLXN_18), 
+                                .Q(x_DUMMY));
+   GND  XLXI_4 (.G(XLXN_1));
+   AND2  XLXI_5 (.I0(y_DUMMY), 
+                .I1(x_DUMMY), 
+                .O(XLXN_13));
+   OR2  XLXI_6 (.I0(z_DUMMY), 
+               .I1(x_DUMMY), 
+               .O(XLXN_9));
+   VCC  XLXI_7 (.P(XLXN_18));
+endmodule
