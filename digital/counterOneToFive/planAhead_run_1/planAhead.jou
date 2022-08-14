@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Nov 22 19:55:41 2021
+# Process ID: 9972
+# Log file: C:/Digi/counterOneToFive/planAhead_run_1/planAhead.log
+# Journal file: C:/Digi/counterOneToFive/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Digi/counterOneToFive/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  Inp]]
+set_property package_pin "" [get_ports [list  {Seg[4]}]]
+set_property package_pin "" [get_ports [list  {Seg[6]}]]
+startgroup
+set_property package_pin P41 [get_ports {Seg[0]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {Seg[1]}]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports {Seg[2]}]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports {Seg[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {Seg[5]}]]
+startgroup
+set_property package_pin P32 [get_ports {Seg[4]}]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports {Seg[5]}]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports {Seg[6]}]
+endgroup
+set_property is_loc_fixed false [get_ports [list  {Seg[0]}]]
+set_property package_pin "" [get_ports [list  Inp]]
+startgroup
+set_property package_pin P83 [get_ports buzzer]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports Inp]
+endgroup
+set_property package_pin "" [get_ports [list  Sel0]]
+save_constraints

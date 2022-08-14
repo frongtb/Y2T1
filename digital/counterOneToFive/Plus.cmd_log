@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym Plus C:/Digi/Lab9.ALU/Plus.sch C:/Digi/counterOneToFive/Plus.sym 
