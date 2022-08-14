@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -verilog BCDto7Seg_drc.vf -w C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/BCDto7Seg.sch 
+sch2sym -intstyle ise -family spartan6 -refsym BCDto7Seg C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/BCDto7Seg.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/BCDto7Seg.sym 
+sch2sym -intstyle ise -family spartan6 -refsym BCDto7Seg C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/BCDto7Seg.sch C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/BCDto7Seg.sym 

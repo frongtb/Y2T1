@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Fri Nov 19 18:58:49 2021
+# Process ID: 28416
+# Log file: C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Parker/Documents/1-2564/Digi/Labs/7/Lab7stopwatch/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
