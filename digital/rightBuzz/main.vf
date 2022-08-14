@@ -1,0 +1,127 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : main.vf
+// /___/   /\     Timestamp : 11/23/2021 15:23:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Digi/rightBuzz/main.vf -w C:/Digi/rightBuzz/main.sch
+//Design Name: main
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB2CE_HXILINX_main(CEO, Q0, Q1, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module main(a, 
+            b, 
+            c, 
+            d, 
+            f, 
+            g, 
+            seg0, 
+            seg1, 
+            seg2, 
+            seg3, 
+            XLXN_36);
+
+   output a;
+   output b;
+   output c;
+   output d;
+   output f;
+   output g;
+   output seg0;
+   output seg1;
+   output seg2;
+   output seg3;
+   output XLXN_36;
+   
+   wire XLXN_17;
+   wire XLXN_18;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_29;
+   wire XLXN_37;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire d_DUMMY;
+   wire f_DUMMY;
+   
+   assign d = d_DUMMY;
+   assign f = f_DUMMY;
+   VCC  XLXI_38 (.P(c));
+   VCC  XLXI_39 (.P(b));
+   VCC  XLXI_40 (.P(a));
+   VCC  XLXI_42 (.P(seg2));
+   VCC  XLXI_43 (.P(seg3));
+   GND  XLXI_45 (.G(seg0));
+   GND  XLXI_51 (.G(g));
+   GND  XLXI_52 (.G(seg1));
+   (* HU_SET = "XLXI_53_0" *) 
+   CB2CE_HXILINX_main  XLXI_53 (.C(XLXN_17), 
+                               .CE(XLXN_18), 
+                               .CLR(XLXN_26), 
+                               .CEO(), 
+                               .Q0(XLXN_28), 
+                               .Q1(XLXN_29), 
+                               .TC());
+   VCC  XLXI_55 (.P(XLXN_18));
+   INV  XLXI_56 (.I(XLXN_28), 
+                .O(XLXN_27));
+   AND2  XLXI_57 (.I0(XLXN_29), 
+                 .I1(XLXN_28), 
+                 .O(d_DUMMY));
+   AND2  XLXI_58 (.I0(XLXN_39), 
+                 .I1(XLXN_27), 
+                 .O(XLXN_26));
+   AND2  XLXI_66 (.I0(XLXN_37), 
+                 .I1(d_DUMMY), 
+                 .O(f_DUMMY));
+   AND2  XLXI_67 (.I0(XLXN_38), 
+                 .I1(f_DUMMY), 
+                 .O(XLXN_36));
+   VCC  XLXI_73 (.P(XLXN_38));
+   VCC  XLXI_74 (.P(XLXN_37));
+   VCC  XLXI_75 (.P(XLXN_17));
+   INV  XLXI_76 (.I(XLXN_29), 
+                .O(XLXN_39));
+endmodule

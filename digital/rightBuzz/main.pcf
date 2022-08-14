@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Nov 23 15:23:42 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "f" LOCATE = SITE "P29" LEVEL 1;
+COMP "g" LOCATE = SITE "P27" LEVEL 1;
+COMP "XLXN_36" LOCATE = SITE "P32" LEVEL 1;
+COMP "seg0" LOCATE = SITE "P44" LEVEL 1;
+COMP "seg1" LOCATE = SITE "P43" LEVEL 1;
+COMP "seg2" LOCATE = SITE "P33" LEVEL 1;
+COMP "seg3" LOCATE = SITE "P30" LEVEL 1;
+COMP "a" LOCATE = SITE "P41" LEVEL 1;
+COMP "b" LOCATE = SITE "P40" LEVEL 1;
+COMP "c" LOCATE = SITE "P35" LEVEL 1;
+COMP "d" LOCATE = SITE "P34" LEVEL 1;
+SCHEMATIC END;
+

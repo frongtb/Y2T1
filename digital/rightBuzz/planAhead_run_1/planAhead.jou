@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Nov 23 15:16:22 2021
+# Process ID: 32204
+# Log file: C:/Digi/rightBuzz/planAhead_run_1/planAhead.log
+# Journal file: C:/Digi/rightBuzz/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Digi/rightBuzz/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P44 [get_ports seg0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports seg1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports seg2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports seg3]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports XLXN_36]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports a]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports b]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports c]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports d]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports f]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports g]
+endgroup
+save_constraints
