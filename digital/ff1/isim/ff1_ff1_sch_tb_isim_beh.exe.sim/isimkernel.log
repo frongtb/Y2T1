@@ -1,0 +1,28 @@
+Command line:
+   ff1_ff1_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61046
+
+Tue Sep 14 13:35:47 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5154.99 Meg
+
+ Total Signals          : 47
+ Total Nets             : 24
+ Total Signal Drivers   : 16
+ Total Blocks           : 10
+ Total Primitive Blocks : 8
+ Total Processes        : 23
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 111
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 4997.71 Meg
+
+Tue Sep 14 13:37:11 2021
+
