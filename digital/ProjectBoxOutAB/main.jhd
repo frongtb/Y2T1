@@ -1,0 +1,3 @@
+MODULE main
+	SUBMODULE ModeSelect
+		INSTANCE XLXI_7

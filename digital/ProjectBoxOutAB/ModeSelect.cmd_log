@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym ModeSelect C:/Digi/Lab9.ALU/ModeSelect.sch C:/Digi/ProjectBoxOutAB/ModeSelect.sym 
