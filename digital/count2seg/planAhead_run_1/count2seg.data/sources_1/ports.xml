@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="Seg">
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="seg0">
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="Inp" Dir="IN"/>
+		<Port Id="XLXN_127" Dir="IN"/>
+		<Port Id="buzzer" Dir="OUT"/>
+		<Port Id="com0" Dir="OUT"/>
+		<Port Id="Com1" Dir="OUT"/>
+		<Port Id="Com2" Dir="OUT"/>
+		<Port Id="Com3" Dir="OUT"/>
+		<Port Id="XLXN_126" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

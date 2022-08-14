@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Digi\count2seg\main.ncd
+OUTFILE=C:\Digi\count2seg\main.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Digi\count2seg
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym HEXto7Seg C:/Digi/Lab9.ALU/HEXto7Seg.sch C:/Digi/count2seg/HEXto7Seg.sym 

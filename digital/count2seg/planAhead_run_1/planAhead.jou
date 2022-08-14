@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Nov 23 15:43:49 2021
+# Process ID: 27484
+# Log file: C:/Digi/count2seg/planAhead_run_1/planAhead.log
+# Journal file: C:/Digi/count2seg/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Digi/count2seg/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports {Seg[0]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {Seg[1]}]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports {Seg[2]}]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports {Seg[3]}]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports {Seg[4]}]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports {Seg[5]}]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports {Seg[6]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports com0]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports Com1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports Com2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports Com3]
+endgroup
+startgroup
+set_property package_pin P51 [get_ports Inp]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports XLXN_127]
+endgroup
+save_constraints
+set_property package_pin "" [get_ports [list  Inp]]
+startgroup
+set_property package_pin P51 [get_ports XLXN_127]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports Inp]
+endgroup
+save_constraints

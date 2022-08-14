@@ -1,0 +1,16 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Seg[0]" LOC = P41;
+NET "Seg[1]" LOC = P40;
+NET "Seg[2]" LOC = P35;
+NET "Seg[3]" LOC = P34;
+NET "Seg[4]" LOC = P32;
+NET "Seg[5]" LOC = P29;
+NET "Seg[6]" LOC = P27;
+NET "com0" LOC = P44;
+NET "Com1" LOC = P43;
+NET "Com2" LOC = P33;
+NET "Com3" LOC = P30;
+NET "XLXN_127" LOC = P51;
+NET "Inp" LOC = P48;
