@@ -1,0 +1,10 @@
+Command line:
+   HalfAdder_HalfAdder_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50752
+
+Tue Aug 31 13:39:31 2021
+
+
+ Elaboration Time: 0.046875 sec

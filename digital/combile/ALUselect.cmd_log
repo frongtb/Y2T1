@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym ALUselect C:/Digi/Lab9.ALU/ALUselect.sch C:/Digi/combile/ALUselect.sym 

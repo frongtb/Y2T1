@@ -1,0 +1,73 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : HalfAdder.vf
+// /___/   /\     Timestamp : 08/30/2021 16:10:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Digi/car/HalfAdder.vf -w C:/Digi/car/HalfAdder.sch
+//Design Name: HalfAdder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module HalfAdder(B, 
+                 D, 
+                 E, 
+                 H, 
+                 S, 
+                 x);
+
+    input B;
+    input D;
+    input E;
+    input H;
+    input S;
+   output x;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_21;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_26;
+   
+   AND3  XLXI_1 (.I0(D), 
+                .I1(B), 
+                .I2(XLXN_3), 
+                .O(XLXN_26));
+   AND3  XLXI_2 (.I0(E), 
+                .I1(XLXN_2), 
+                .I2(S), 
+                .O(XLXN_24));
+   AND2  XLXI_3 (.I0(XLXN_1), 
+                .I1(H), 
+                .O(XLXN_25));
+   AND2  XLXI_4 (.I0(E), 
+                .I1(XLXN_4), 
+                .O(XLXN_21));
+   INV  XLXI_5 (.I(D), 
+               .O(XLXN_4));
+   INV  XLXI_7 (.I(S), 
+               .O(XLXN_3));
+   INV  XLXI_10 (.I(B), 
+                .O(XLXN_2));
+   INV  XLXI_11 (.I(E), 
+                .O(XLXN_1));
+   OR4  XLXI_12 (.I0(XLXN_25), 
+                .I1(XLXN_24), 
+                .I2(XLXN_26), 
+                .I3(XLXN_21), 
+                .O(x));
+endmodule
