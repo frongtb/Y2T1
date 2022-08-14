@@ -1,0 +1,9 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "a" LOC = P55;
+NET "b" LOC = P56;
+NET "c" LOC = P57;
+NET "d" LOC = P58;
+NET "e" LOC = P59;
+NET "kanorO" LOC = P67;

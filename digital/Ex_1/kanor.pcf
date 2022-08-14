@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Nov 23 13:41:24 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "e" LOCATE = SITE "P59" LEVEL 1;
+COMP "kanorO" LOCATE = SITE "P67" LEVEL 1;
+COMP "a" LOCATE = SITE "P55" LEVEL 1;
+COMP "b" LOCATE = SITE "P56" LEVEL 1;
+COMP "c" LOCATE = SITE "P57" LEVEL 1;
+COMP "d" LOCATE = SITE "P58" LEVEL 1;
+SCHEMATIC END;
+

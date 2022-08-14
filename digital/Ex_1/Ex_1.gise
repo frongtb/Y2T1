@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Ex_1.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="kanor.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="kanor.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="kanor.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="kanor.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="kanor.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="kanor.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="kanor.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="kanor.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="kanor.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="kanor.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="kanor.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="kanor.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="kanor.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="kanor.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="kanor.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="kanor.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="kanor.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="kanor.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="kanor.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="kanor.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="kanor.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="kanor.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="kanor.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="kanor.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="kanor.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="kanor_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="kanor_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="kanor_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="kanor_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="kanor_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="kanor_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="kanor_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="kanor_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="kanor_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="kanor_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="kanor_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="kanor_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="kanor_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="kanor_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="kanor_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1637649670" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1637649670">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649672" xil_pn:in_ck="154766253602471" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1106767892199601911" xil_pn:start_ts="1637649670">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="kanor.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649672" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1666226502736953120" xil_pn:start_ts="1637649672">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649672" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1637649672">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649672" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2004774622670177227" xil_pn:start_ts="1637649672">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649672" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1637649672">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649672" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8627911840389437654" xil_pn:start_ts="1637649672">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649677" xil_pn:in_ck="4689886472901" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4672818926038902008" xil_pn:start_ts="1637649672">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="kanor.jhd"/>
+      <outfile xil_pn:name="kanor.lso"/>
+      <outfile xil_pn:name="kanor.ngc"/>
+      <outfile xil_pn:name="kanor.ngr"/>
+      <outfile xil_pn:name="kanor.prj"/>
+      <outfile xil_pn:name="kanor.stx"/>
+      <outfile xil_pn:name="kanor.syr"/>
+      <outfile xil_pn:name="kanor.xst"/>
+      <outfile xil_pn:name="kanor_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649677" xil_pn:in_ck="154766253604647" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4066557905383246365" xil_pn:start_ts="1637649677">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649681" xil_pn:in_ck="6771545573566844456" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2168603760679859745" xil_pn:start_ts="1637649677">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="kanor.bld"/>
+      <outfile xil_pn:name="kanor.ngd"/>
+      <outfile xil_pn:name="kanor_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649686" xil_pn:in_ck="6771591985051246409" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1637649681">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="kanor.pcf"/>
+      <outfile xil_pn:name="kanor_map.map"/>
+      <outfile xil_pn:name="kanor_map.mrp"/>
+      <outfile xil_pn:name="kanor_map.ncd"/>
+      <outfile xil_pn:name="kanor_map.ngm"/>
+      <outfile xil_pn:name="kanor_map.xrpt"/>
+      <outfile xil_pn:name="kanor_summary.xml"/>
+      <outfile xil_pn:name="kanor_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649694" xil_pn:in_ck="7982162453511370882" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1637649686">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="kanor.ncd"/>
+      <outfile xil_pn:name="kanor.pad"/>
+      <outfile xil_pn:name="kanor.par"/>
+      <outfile xil_pn:name="kanor.ptwx"/>
+      <outfile xil_pn:name="kanor.unroutes"/>
+      <outfile xil_pn:name="kanor.xpi"/>
+      <outfile xil_pn:name="kanor_pad.csv"/>
+      <outfile xil_pn:name="kanor_pad.txt"/>
+      <outfile xil_pn:name="kanor_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649700" xil_pn:in_ck="154766253597022" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1637649694">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="kanor.bgn"/>
+      <outfile xil_pn:name="kanor.bit"/>
+      <outfile xil_pn:name="kanor.drc"/>
+      <outfile xil_pn:name="kanor.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1637649694" xil_pn:in_ck="6765465669110188613" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1637649690">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="kanor.twr"/>
+      <outfile xil_pn:name="kanor.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

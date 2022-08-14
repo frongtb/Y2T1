@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Digi/Ex_1/kanor.xst" -ofn "C:/Digi/Ex_1/kanor.syr" 
+xst -intstyle ise -ifn "C:/Digi/Ex_1/kanor.xst" -ofn "C:/Digi/Ex_1/kanor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 kanor.ngc kanor.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kanor_map.ncd kanor.ngd kanor.pcf 
+par -w -intstyle ise -ol high -mt off kanor_map.ncd kanor.ncd kanor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kanor.twx kanor.ncd -o kanor.twr kanor.pcf 
+bitgen -intstyle ise -f kanor.ut kanor.ncd 
+xst -intstyle ise -ifn "C:/Digi/Ex_1/kanor.xst" -ofn "C:/Digi/Ex_1/kanor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kanor.ucf -p xc6slx9-tqg144-3 kanor.ngc kanor.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kanor_map.ncd kanor.ngd kanor.pcf 
+par -w -intstyle ise -ol high -mt off kanor_map.ncd kanor.ncd kanor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kanor.twx kanor.ncd -o kanor.twr kanor.pcf -ucf kanor.ucf 
+bitgen -intstyle ise -f kanor.ut kanor.ncd 
+xst -intstyle ise -ifn "C:/Digi/Ex_1/kanor.xst" -ofn "C:/Digi/Ex_1/kanor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc kanor.ucf -p xc6slx9-tqg144-3 kanor.ngc kanor.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kanor_map.ncd kanor.ngd kanor.pcf 
+par -w -intstyle ise -ol high -mt off kanor_map.ncd kanor.ncd kanor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kanor.twx kanor.ncd -o kanor.twr kanor.pcf -ucf kanor.ucf 
+bitgen -intstyle ise -f kanor.ut kanor.ncd 
