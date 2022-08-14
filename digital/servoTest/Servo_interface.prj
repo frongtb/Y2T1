@@ -1,0 +1,5 @@
+verilog work "../../Users/Mr.Supakorn Thongbor/Downloads/ServoControlwithPmodCON3/ServoControlwithPmodCON3.srcs/sources_1/new/sw_to_angle.v"
+verilog work "../../Users/Mr.Supakorn Thongbor/Downloads/ServoControlwithPmodCON3/ServoControlwithPmodCON3.srcs/sources_1/new/angle_decoder.v"
+verilog work "../../Users/Mr.Supakorn Thongbor/Downloads/ServoControlwithPmodCON3/counter.v"
+verilog work "../../Users/Mr.Supakorn Thongbor/Downloads/ServoControlwithPmodCON3/comparator.v"
+verilog work "../../Users/Mr.Supakorn Thongbor/Downloads/ServoControlwithPmodCON3/Servo_interface.v"

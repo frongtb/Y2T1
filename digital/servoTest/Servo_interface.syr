@@ -1,0 +1,480 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Servo_interface.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Servo_interface.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Servo_interface"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : Servo_interface
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\ServoControlwithPmodCON3.srcs\sources_1\new\sw_to_angle.v" into library work
+Parsing module <sw_to_angle>.
+Analyzing Verilog file "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\ServoControlwithPmodCON3.srcs\sources_1\new\angle_decoder.v" into library work
+Parsing module <angle_decoder>.
+Analyzing Verilog file "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\counter.v" into library work
+Parsing module <counter>.
+Analyzing Verilog file "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\comparator.v" into library work
+Parsing module <comparator>.
+Analyzing Verilog file "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\Servo_interface.v" into library work
+Parsing module <Servo_interface>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Servo_interface>.
+
+Elaborating module <sw_to_angle>.
+
+Elaborating module <angle_decoder>.
+
+Elaborating module <comparator>.
+
+Elaborating module <counter>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Servo_interface>.
+    Related source file is "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\Servo_interface.v".
+    Summary:
+	no macro.
+Unit <Servo_interface> synthesized.
+
+Synthesizing Unit <sw_to_angle>.
+    Related source file is "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\ServoControlwithPmodCON3.srcs\sources_1\new\sw_to_angle.v".
+    Summary:
+	no macro.
+Unit <sw_to_angle> synthesized.
+
+Synthesizing Unit <angle_decoder>.
+    Related source file is "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\ServoControlwithPmodCON3.srcs\sources_1\new\angle_decoder.v".
+    Found 20-bit adder for signal <value> created at line 40.
+    Found 10x9-bit multiplier for signal <PWR_3_o_angle[8]_MuLt_0_OUT> created at line 40.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <angle_decoder> synthesized.
+
+Synthesizing Unit <comparator>.
+    Related source file is "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\comparator.v".
+    Found 20-bit comparator greater for signal <PWM> created at line 36
+    Summary:
+	inferred   1 Comparator(s).
+Unit <comparator> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "C:\Users\Mr.Supakorn Thongbor\Downloads\ServoControlwithPmodCON3\counter.v".
+    Found 20-bit register for signal <count>.
+    Found 20-bit adder for signal <count[19]_GND_6_o_add_3_OUT> created at line 48.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+Unit <counter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 10x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 2
+ 20-bit adder                                          : 2
+# Registers                                            : 1
+ 20-bit register                                       : 1
+# Comparators                                          : 1
+ 20-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <angle_decoder>.
+	Multiplier <Mmult_PWR_3_o_angle[8]_MuLt_0_OUT> in block <angle_decoder> and adder/subtractor <Madd_value> in block <angle_decoder> are combined into a MAC<Maddsub_PWR_3_o_angle[8]_MuLt_0_OUT>.
+Unit <angle_decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <counter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 1
+ 10x9-to-20-bit MAC                                    : 1
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Comparators                                          : 1
+ 20-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Servo_interface> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Servo_interface, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Servo_interface.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 146
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 19
+#      LUT2                        : 20
+#      LUT3                        : 5
+#      LUT4                        : 21
+#      LUT5                        : 7
+#      LUT6                        : 23
+#      MUXCY                       : 28
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 20
+#      FD                          : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 17
+#      OBUF                        : 1
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              20  out of  11440     0%  
+ Number of Slice LUTs:                   96  out of   5720     1%  
+    Number used as Logic:                96  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     96
+   Number with an unused Flip Flop:      76  out of     96    79%  
+   Number with an unused LUT:             0  out of     96     0%  
+   Number of fully used LUT-FF pairs:    20  out of     96    20%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    102    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.906ns (Maximum Frequency: 256.030MHz)
+   Minimum input arrival time before clock: 3.597ns
+   Maximum output required time after clock: 6.016ns
+   Maximum combinational path delay: 17.084ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.906ns (frequency: 256.030MHz)
+  Total number of paths / destination ports: 610 / 20
+-------------------------------------------------------------------------
+Delay:               3.906ns (Levels of Logic = 3)
+  Source:            count/count_19 (FF)
+  Destination:       count/count_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: count/count_19 to count/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   1.015  count/count_19 (count/count_19)
+     LUT6:I0->O            2   0.203   0.845  count/clr_count[19]_OR_66_o5_SW0 (N19)
+     LUT6:I3->O           11   0.205   0.883  count/clr_count[19]_OR_66_o5 (count/clr_count[19]_OR_66_o)
+     LUT2:I1->O            1   0.205   0.000  count/count_0_rstpot (count/count_0_rstpot)
+     FD:D                      0.102          count/count_0
+    ----------------------------------------
+    Total                      3.906ns (1.162ns logic, 2.744ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 3)
+  Source:            clr (PAD)
+  Destination:       count/count_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: clr to count/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.981  clr_IBUF (clr_IBUF)
+     LUT6:I0->O           11   0.203   0.883  count/clr_count[19]_OR_66_o5 (count/clr_count[19]_OR_66_o)
+     LUT2:I1->O            1   0.205   0.000  count/count_0_rstpot (count/count_0_rstpot)
+     FD:D                      0.102          count/count_0
+    ----------------------------------------
+    Total                      3.597ns (1.732ns logic, 1.865ns route)
+                                       (48.2% logic, 51.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 38 / 1
+-------------------------------------------------------------------------
+Offset:              6.016ns (Levels of Logic = 12)
+  Source:            count/count_0 (FF)
+  Destination:       PWM (PAD)
+  Source Clock:      clk rising
+
+  Data Path: count/count_0 to PWM
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.447   0.912  count/count_0 (count/count_0)
+     LUT4:I1->O            1   0.205   0.000  compare/Mcompar_PWM_lut<0> (compare/Mcompar_PWM_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  compare/Mcompar_PWM_cy<0> (compare/Mcompar_PWM_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<1> (compare/Mcompar_PWM_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<2> (compare/Mcompar_PWM_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<3> (compare/Mcompar_PWM_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<4> (compare/Mcompar_PWM_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<5> (compare/Mcompar_PWM_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<6> (compare/Mcompar_PWM_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<7> (compare/Mcompar_PWM_cy<7>)
+     MUXCY:CI->O           1   0.213   0.580  compare/Mcompar_PWM_cy<8> (compare/Mcompar_PWM_cy<8>)
+     LUT5:I4->O            1   0.205   0.579  compare/Mcompar_PWM_cy<9>_inv1 (PWM_OBUF)
+     OBUF:I->O                 2.571          PWM_OBUF (PWM)
+    ----------------------------------------
+    Total                      6.016ns (3.946ns logic, 2.070ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 20064 / 1
+-------------------------------------------------------------------------
+Delay:               17.084ns (Levels of Logic = 19)
+  Source:            sw<11> (PAD)
+  Destination:       PWM (PAD)
+
+  Data Path: sw<11> to PWM
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.222   1.085  sw_11_IBUF (sw_11_IBUF)
+     LUT3:I0->O            1   0.205   0.580  converter/sw[15]_GND_2_o_equal_2_o<15>1_SW0 (N17)
+     LUT6:I5->O            6   0.205   1.109  converter/sw[15]_GND_2_o_equal_2_o<15>1 (converter/sw[15]_GND_2_o_equal_2_o<15>1)
+     LUT6:I0->O            3   0.203   0.995  converter/sw[15]_GND_2_o_equal_8_o<15>1 (converter/sw[15]_GND_2_o_equal_8_o)
+     LUT5:I0->O            1   0.203   0.580  converter/angle<4>4_SW0 (N21)
+     LUT6:I5->O            1   0.205   0.579  converter/angle<4>4 (angle_net<5>)
+     DSP48A1:B5->P0        2   4.394   0.864  decode/Maddsub_PWR_3_o_angle[8]_MuLt_0_OUT (value_net<0>)
+     LUT4:I0->O            1   0.203   0.000  compare/Mcompar_PWM_lut<0> (compare/Mcompar_PWM_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  compare/Mcompar_PWM_cy<0> (compare/Mcompar_PWM_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<1> (compare/Mcompar_PWM_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<2> (compare/Mcompar_PWM_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<3> (compare/Mcompar_PWM_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<4> (compare/Mcompar_PWM_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<5> (compare/Mcompar_PWM_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<6> (compare/Mcompar_PWM_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  compare/Mcompar_PWM_cy<7> (compare/Mcompar_PWM_cy<7>)
+     MUXCY:CI->O           1   0.213   0.580  compare/Mcompar_PWM_cy<8> (compare/Mcompar_PWM_cy<8>)
+     LUT5:I4->O            1   0.205   0.579  compare/Mcompar_PWM_cy<9>_inv1 (PWM_OBUF)
+     OBUF:I->O                 2.571          PWM_OBUF (PWM)
+    ----------------------------------------
+    Total                     17.084ns (10.134ns logic, 6.950ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.906|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.81 secs
+ 
+--> 
+
+Total memory usage is 4505528 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
