@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Digi\sevenSeg\impact.xsl
+OUTFILE=C:\Digi\sevenSeg\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Digi\sevenSeg
+LICENSE=iMPACT
+USER_INFO=iMPACT

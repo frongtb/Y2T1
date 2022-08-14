@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Digi\sevenSeg\halfadder.ncd
+OUTFILE=C:\Digi\sevenSeg\halfadder.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=C:\Digi\sevenSeg
+LICENSE=WebPack
+USER_INFO=__0_0_0
