@@ -1,0 +1,747 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ALU.vf
+// /___/   /\     Timestamp : 11/14/2021 20:03:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Digi/ALU/ALU.vf -w "C:/Users/Mr.Supakorn Thongbor/Downloads/Lab9.ALU/ALU.sch"
+//Design Name: ALU
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module D4_16E_HXILINX_ALU (D0, D1, D2, D3, D4, D5, D6, D7, D8, D9, D10, D11, D12, D13, D14, D15, A0, A1, A2, A3, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   output D8;
+   output D9;
+   output D10;
+   output D11;
+   output D12;
+   output D13;
+   output D14;
+   output D15;
+
+   input  A0;
+   input  A1;
+   input  A2;
+   input  A3;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+   reg D4;
+   reg D5;
+   reg D6;
+   reg D7;
+   reg D8;
+   reg D9;
+   reg D10;
+   reg D11;
+   reg D12;
+   reg D13;
+   reg D14;
+   reg D15;
+
+      always @ (A0 or A1 or A2 or A3 or E)
+      begin
+         if(!E)
+           {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0000;
+        else
+        begin
+           case({A3,A2,A1,A0})
+             4'b0000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0001;
+             4'b0001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0010;
+             4'b0010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_0100;
+             4'b0011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0000_1000;
+             4'b0100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0001_0000;
+             4'b0101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0010_0000;
+             4'b0110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_0100_0000;
+             4'b0111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0000_1000_0000;
+             4'b1000 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0001_0000_0000;
+             4'b1001 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0010_0000_0000;
+             4'b1010 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_0100_0000_0000;
+             4'b1011 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0000_1000_0000_0000;
+             4'b1100 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0001_0000_0000_0000;
+             4'b1101 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0010_0000_0000_0000;
+             4'b1110 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b0100_0000_0000_0000;
+             4'b1111 :  {D15, D14, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0} <= 16'b1000_0000_0000_0000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_ALU(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module ADD8_HXILINX_ALU (CO, OFL, S, A, B, CI);
+
+
+   output 	      CO;
+   output 	      OFL;
+   output [7:0]       S;
+
+   input  [7:0]       A;
+   input  [7:0]       B;
+   input              CI;
+
+   assign   {CO, S} = A + B + CI;
+   assign   OFL     = ( A[7] & B[7] & (~S[7])) | ((~A[7]) & (~B[7]) & S[7]);
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module NOR6_HXILINX_ALU (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = !(I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module ADSU8_HXILINX_ALU (CO, OFL, S, A, ADD, B, CI);
+
+   
+   output             CO;
+   output             OFL;
+   output [7:0]       S;
+
+   input  [7:0]       A;
+   input  	      ADD;
+   input  [7:0]       B;
+   input              CI;
+
+   reg    [8:0]       adsu_tmp;  
+
+   always @ (A, ADD, B, CI) 
+   begin
+      if(ADD)
+         adsu_tmp = A + B + CI;
+      else
+         adsu_tmp = A - (!CI) - B;
+   end
+
+   assign S   =  adsu_tmp[7:0];
+   assign CO  =  ADD ? adsu_tmp[8] : ~adsu_tmp[8];
+   assign OFL =  ADD ? ( (A[7] & B[7] & (~S[7])) | ((~A[7]) & (~B[7]) & S[7]) ) : ( (A[7] & (~B[7]) & (~S[7])) | ((~A[7]) & B[7] & S[7]) );
+
+endmodule
+`timescale 100 ps / 10 ps
+
+module FD4CE_HXILINX_ALU(Q0, Q1, Q2, Q3, C, CE, CLR, D0, D1, D2, D3);
+   
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   input              D0;
+   input              D1;
+   input              D2;
+   input              D3;
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+          {Q3, Q2, Q1, Q0} <= {D3, D2, D1, D0};
+     end
+   
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module CB16CE_HXILINX_ALU(CEO, Q, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 16'b1111_1111_1111_1111;
+   
+   output             CEO;
+   output [15:0]      Q;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg    [15:0]      Q;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 16'b0000_0000_0000_0000;
+	else if (CE)
+	  Q <= Q + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = (Q == TERMINAL_COUNT);
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module M4_1E_HXILINX_ALU (O, D0, D1, D2, D3, E, S0, S1);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  D2;
+   input  D3;
+   input  E;
+   input  S0;
+   input  S1;
+
+   reg O;
+
+   always @ ( D0 or D1 or D2 or D3 or E or S0 or S1)
+   begin
+      if(!E)
+      O <= 1'b0;
+      else 
+      begin
+        case({S1,S0})
+        2'b00 : O <= D0;
+        2'b01 : O <= D1;
+        2'b10 : O <= D2;
+        2'b11 : O <= D3;
+        endcase
+      end
+   end
+    
+endmodule
+`timescale  100 ps / 10 ps
+
+module M2_1_HXILINX_ALU (O, D0, D1, S0);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  S0;
+
+   reg O;
+
+   always @ ( D0 or D1 or S0)
+   begin
+      case(S0)
+      1'b0 : O <= D0;
+      1'b1 : O <= D1;
+      endcase
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module ModeSelect_MUSER_ALU(Button, 
+                            Mode);
+
+    input [3:0] Button;
+   output [1:0] Mode;
+   
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_32;
+   
+   (* HU_SET = "XLXI_1_20" *) 
+   FD4CE_HXILINX_ALU  XLXI_1 (.C(XLXN_23), 
+                             .CE(XLXN_24), 
+                             .CLR(XLXN_25), 
+                             .D0(Button[0]), 
+                             .D1(Button[1]), 
+                             .D2(Button[2]), 
+                             .D3(Button[3]), 
+                             .Q0(), 
+                             .Q1(XLXN_32), 
+                             .Q2(XLXN_27), 
+                             .Q3(XLXN_28));
+   OR4  XLXI_2 (.I0(Button[3]), 
+               .I1(Button[2]), 
+               .I2(Button[1]), 
+               .I3(Button[0]), 
+               .O(XLXN_23));
+   VCC  XLXI_3 (.P(XLXN_24));
+   GND  XLXI_4 (.G(XLXN_25));
+   OR2  XLXI_7 (.I0(XLXN_28), 
+               .I1(XLXN_32), 
+               .O(Mode[0]));
+   OR2  XLXI_8 (.I0(XLXN_28), 
+               .I1(XLXN_27), 
+               .O(Mode[1]));
+endmodule
+`timescale 1ns / 1ps
+
+module XOR8Bit_MUSER_ALU(A, 
+                         B, 
+                         R);
+
+    input [7:0] A;
+    input [7:0] B;
+   output [7:0] R;
+   
+   
+   XOR2  XLXI_1_0 (.I0(B[0]), 
+                  .I1(A[0]), 
+                  .O(R[0]));
+   XOR2  XLXI_1_1 (.I0(B[1]), 
+                  .I1(A[1]), 
+                  .O(R[1]));
+   XOR2  XLXI_1_2 (.I0(B[2]), 
+                  .I1(A[2]), 
+                  .O(R[2]));
+   XOR2  XLXI_1_3 (.I0(B[3]), 
+                  .I1(A[3]), 
+                  .O(R[3]));
+   XOR2  XLXI_1_4 (.I0(B[4]), 
+                  .I1(A[4]), 
+                  .O(R[4]));
+   XOR2  XLXI_1_5 (.I0(B[5]), 
+                  .I1(A[5]), 
+                  .O(R[5]));
+   XOR2  XLXI_1_6 (.I0(B[6]), 
+                  .I1(A[6]), 
+                  .O(R[6]));
+   XOR2  XLXI_1_7 (.I0(B[7]), 
+                  .I1(A[7]), 
+                  .O(R[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module ShiftLeft_MUSER_ALU(A, 
+                           R);
+
+    input [7:0] A;
+   output [7:0] R;
+   
+   
+   BUF  XLXI_7_0 (.I(A[0]), 
+                 .O(R[1]));
+   BUF  XLXI_7_1 (.I(A[1]), 
+                 .O(R[2]));
+   BUF  XLXI_7_2 (.I(A[2]), 
+                 .O(R[3]));
+   BUF  XLXI_7_3 (.I(A[3]), 
+                 .O(R[4]));
+   BUF  XLXI_7_4 (.I(A[4]), 
+                 .O(R[5]));
+   BUF  XLXI_7_5 (.I(A[5]), 
+                 .O(R[6]));
+   BUF  XLXI_7_6 (.I(A[6]), 
+                 .O(R[7]));
+   GND  XLXI_8 (.G(R[0]));
+endmodule
+`timescale 1ns / 1ps
+
+module Minus_MUSER_ALU(A, 
+                       B, 
+                       R);
+
+    input [7:0] A;
+    input [7:0] B;
+   output [7:0] R;
+   
+   wire XLXN_6;
+   wire XLXN_8;
+   
+   (* HU_SET = "XLXI_1_21" *) 
+   ADSU8_HXILINX_ALU  XLXI_1 (.A(A[7:0]), 
+                             .ADD(XLXN_6), 
+                             .B(B[7:0]), 
+                             .CI(XLXN_8), 
+                             .CO(), 
+                             .OFL(), 
+                             .S(R[7:0]));
+   GND  XLXI_3 (.G(XLXN_6));
+   VCC  XLXI_5 (.P(XLXN_8));
+endmodule
+`timescale 1ns / 1ps
+
+module Plus_MUSER_ALU(A, 
+                      B, 
+                      R);
+
+    input [7:0] A;
+    input [7:0] B;
+   output [7:0] R;
+   
+   wire XLXN_5;
+   
+   (* HU_SET = "XLXI_1_22" *) 
+   ADD8_HXILINX_ALU  XLXI_1 (.A(A[7:0]), 
+                            .B(B[7:0]), 
+                            .CI(XLXN_5), 
+                            .CO(), 
+                            .OFL(), 
+                            .S(R[7:0]));
+   GND  XLXI_9 (.G(XLXN_5));
+endmodule
+`timescale 1ns / 1ps
+
+module ALUselect_MUSER_ALU(A, 
+                           B, 
+                           S, 
+                           R);
+
+    input [7:0] A;
+    input [7:0] B;
+    input [1:0] S;
+   output [7:0] R;
+   
+   wire [7:0] R_Minus;
+   wire [7:0] R_Plus;
+   wire [7:0] R_Shift;
+   wire [7:0] R_XOR;
+   wire XLXN_14;
+   
+   Plus_MUSER_ALU  XLXI_1 (.A(A[7:0]), 
+                          .B(B[7:0]), 
+                          .R(R_Plus[7:0]));
+   Minus_MUSER_ALU  XLXI_3 (.A(A[7:0]), 
+                           .B(B[7:0]), 
+                           .R(R_Minus[7:0]));
+   ShiftLeft_MUSER_ALU  XLXI_5 (.A(A[7:0]), 
+                               .R(R_Shift[7:0]));
+   (* HU_SET = "XLXI_6_0_30" *) 
+   M4_1E_HXILINX_ALU  XLXI_6_0 (.D0(R_Plus[0]), 
+                               .D1(R_Minus[0]), 
+                               .D2(R_XOR[0]), 
+                               .D3(R_Shift[0]), 
+                               .E(XLXN_14), 
+                               .S0(S[0]), 
+                               .S1(S[1]), 
+                               .O(R[0]));
+   (* HU_SET = "XLXI_6_1_29" *) 
+   M4_1E_HXILINX_ALU  XLXI_6_1 (.D0(R_Plus[1]), 
+                               .D1(R_Minus[1]), 
+                               .D2(R_XOR[1]), 
+                               .D3(R_Shift[1]), 
+                               .E(XLXN_14), 
+                               .S0(S[0]), 
+                               .S1(S[1]), 
+                               .O(R[1]));
+   (* HU_SET = "XLXI_6_2_28" *) 
+   M4_1E_HXILINX_ALU  XLXI_6_2 (.D0(R_Plus[2]), 
+                               .D1(R_Minus[2]), 
+                               .D2(R_XOR[2]), 
+                               .D3(R_Shift[2]), 
+                               .E(XLXN_14), 
+                               .S0(S[0]), 
+                               .S1(S[1]), 
+                               .O(R[2]));
+   (* HU_SET = "XLXI_6_3_27" *) 
+   M4_1E_HXILINX_ALU  XLXI_6_3 (.D0(R_Plus[3]), 
+                               .D1(R_Minus[3]), 
+                               .D2(R_XOR[3]), 
+                               .D3(R_Shift[3]), 
+                               .E(XLXN_14), 
+                               .S0(S[0]), 
+                               .S1(S[1]), 
+                               .O(R[3]));
+   (* HU_SET = "XLXI_6_4_26" *) 
+   M4_1E_HXILINX_ALU  XLXI_6_4 (.D0(R_Plus[4]), 
+                               .D1(R_Minus[4]), 
+                               .D2(R_XOR[4]), 
+                               .D3(R_Shift[4]), 
+                               .E(XLXN_14), 
+                               .S0(S[0]), 
+                               .S1(S[1]), 
+                               .O(R[4]));
+   (* HU_SET = "XLXI_6_5_25" *) 
+   M4_1E_HXILINX_ALU  XLXI_6_5 (.D0(R_Plus[5]), 
+                               .D1(R_Minus[5]), 
+                               .D2(R_XOR[5]), 
+                               .D3(R_Shift[5]), 
+                               .E(XLXN_14), 
+                               .S0(S[0]), 
+                               .S1(S[1]), 
+                               .O(R[5]));
+   (* HU_SET = "XLXI_6_6_24" *) 
+   M4_1E_HXILINX_ALU  XLXI_6_6 (.D0(R_Plus[6]), 
+                               .D1(R_Minus[6]), 
+                               .D2(R_XOR[6]), 
+                               .D3(R_Shift[6]), 
+                               .E(XLXN_14), 
+                               .S0(S[0]), 
+                               .S1(S[1]), 
+                               .O(R[6]));
+   (* HU_SET = "XLXI_6_7_23" *) 
+   M4_1E_HXILINX_ALU  XLXI_6_7 (.D0(R_Plus[7]), 
+                               .D1(R_Minus[7]), 
+                               .D2(R_XOR[7]), 
+                               .D3(R_Shift[7]), 
+                               .E(XLXN_14), 
+                               .S0(S[0]), 
+                               .S1(S[1]), 
+                               .O(R[7]));
+   VCC  XLXI_7 (.P(XLXN_14));
+   XOR8Bit_MUSER_ALU  XLXI_12 (.A(A[7:0]), 
+                              .B(B[7:0]), 
+                              .R(R_XOR[7:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module ClockDivider_MUSER_ALU(ClockIn, 
+                              CLK7Seg);
+
+    input ClockIn;
+   output CLK7Seg;
+   
+   wire [15:0] Q;
+   wire XLXN_52;
+   wire XLXN_56;
+   
+   VCC  XLXI_37 (.P(XLXN_52));
+   GND  XLXI_38 (.G(XLXN_56));
+   (* HU_SET = "XLXI_40_31" *) 
+   CB16CE_HXILINX_ALU  XLXI_40 (.C(ClockIn), 
+                               .CE(XLXN_52), 
+                               .CLR(XLXN_56), 
+                               .CEO(), 
+                               .Q(Q[15:0]), 
+                               .TC());
+   BUF  XLXI_41 (.I(Q[15]), 
+                .O(CLK7Seg));
+endmodule
+`timescale 1ns / 1ps
+
+module HEXto7Seg_MUSER_ALU(HEX, 
+                           SEG);
+
+    input [3:0] HEX;
+   output [6:0] SEG;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_20;
+   
+   (* HU_SET = "XLXI_4_32" *) 
+   D4_16E_HXILINX_ALU  XLXI_4 (.A0(HEX[0]), 
+                              .A1(HEX[1]), 
+                              .A2(HEX[2]), 
+                              .A3(HEX[3]), 
+                              .E(XLXN_20), 
+                              .D0(XLXN_1), 
+                              .D1(XLXN_2), 
+                              .D2(XLXN_3), 
+                              .D3(XLXN_4), 
+                              .D4(XLXN_5), 
+                              .D5(XLXN_6), 
+                              .D6(XLXN_7), 
+                              .D7(XLXN_8), 
+                              .D8(), 
+                              .D9(XLXN_10), 
+                              .D10(XLXN_11), 
+                              .D11(XLXN_12), 
+                              .D12(XLXN_13), 
+                              .D13(XLXN_14), 
+                              .D14(XLXN_15), 
+                              .D15(XLXN_16));
+   NOR4  XLXI_5 (.I0(XLXN_2), 
+                .I1(XLXN_5), 
+                .I2(XLXN_12), 
+                .I3(XLXN_14), 
+                .O(SEG[0]));
+   (* HU_SET = "XLXI_6_33" *) 
+   NOR6_HXILINX_ALU  XLXI_6 (.I0(XLXN_6), 
+                            .I1(XLXN_7), 
+                            .I2(XLXN_12), 
+                            .I3(XLXN_13), 
+                            .I4(XLXN_15), 
+                            .I5(XLXN_16), 
+                            .O(SEG[1]));
+   NOR4  XLXI_7 (.I0(XLXN_3), 
+                .I1(XLXN_13), 
+                .I2(XLXN_15), 
+                .I3(XLXN_16), 
+                .O(SEG[2]));
+   NOR5  XLXI_8 (.I0(XLXN_2), 
+                .I1(XLXN_5), 
+                .I2(XLXN_8), 
+                .I3(XLXN_11), 
+                .I4(XLXN_16), 
+                .O(SEG[3]));
+   (* HU_SET = "XLXI_9_34" *) 
+   NOR6_HXILINX_ALU  XLXI_9 (.I0(XLXN_2), 
+                            .I1(XLXN_4), 
+                            .I2(XLXN_5), 
+                            .I3(XLXN_6), 
+                            .I4(XLXN_8), 
+                            .I5(XLXN_10), 
+                            .O(SEG[4]));
+   NOR5  XLXI_10 (.I0(XLXN_2), 
+                 .I1(XLXN_3), 
+                 .I2(XLXN_4), 
+                 .I3(XLXN_8), 
+                 .I4(XLXN_14), 
+                 .O(SEG[5]));
+   NOR4  XLXI_11 (.I0(XLXN_1), 
+                 .I1(XLXN_2), 
+                 .I2(XLXN_8), 
+                 .I3(XLXN_13), 
+                 .O(SEG[6]));
+   VCC  XLXI_12 (.P(XLXN_20));
+endmodule
+`timescale 1ns / 1ps
+
+module HEXto7Seg2Digit_MUSER_ALU(CLK, 
+                                 HEX, 
+                                 COM, 
+                                 SEG);
+
+    input CLK;
+    input [7:0] HEX;
+   output [3:0] COM;
+   output [6:0] SEG;
+   
+   wire [3:0] XLXN_1;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   
+   HEXto7Seg_MUSER_ALU  XLXI_1 (.HEX(XLXN_1[3:0]), 
+                               .SEG(SEG[6:0]));
+   (* HU_SET = "XLXI_2_0_38" *) 
+   M2_1_HXILINX_ALU  XLXI_2_0 (.D0(HEX[0]), 
+                              .D1(HEX[4]), 
+                              .S0(XLXN_6), 
+                              .O(XLXN_1[0]));
+   (* HU_SET = "XLXI_2_1_37" *) 
+   M2_1_HXILINX_ALU  XLXI_2_1 (.D0(HEX[1]), 
+                              .D1(HEX[5]), 
+                              .S0(XLXN_6), 
+                              .O(XLXN_1[1]));
+   (* HU_SET = "XLXI_2_2_36" *) 
+   M2_1_HXILINX_ALU  XLXI_2_2 (.D0(HEX[2]), 
+                              .D1(HEX[6]), 
+                              .S0(XLXN_6), 
+                              .O(XLXN_1[2]));
+   (* HU_SET = "XLXI_2_3_35" *) 
+   M2_1_HXILINX_ALU  XLXI_2_3 (.D0(HEX[3]), 
+                              .D1(HEX[7]), 
+                              .S0(XLXN_6), 
+                              .O(XLXN_1[3]));
+   (* HU_SET = "XLXI_4_39" *) 
+   FTC_HXILINX_ALU  XLXI_4 (.C(CLK), 
+                           .CLR(XLXN_7), 
+                           .T(XLXN_8), 
+                           .Q(XLXN_6));
+   VCC  XLXI_5 (.P(XLXN_8));
+   GND  XLXI_6 (.G(XLXN_7));
+   BUF  XLXI_7 (.I(XLXN_6), 
+               .O(COM[0]));
+   INV  XLXI_8 (.I(XLXN_6), 
+               .O(COM[1]));
+   VCC  XLXI_11_2 (.P(COM[2]));
+   VCC  XLXI_11_3 (.P(COM[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module ALU(A, 
+           B, 
+           Button, 
+           CLK, 
+           COM, 
+           SEG);
+
+    input [7:0] A;
+    input [7:0] B;
+    input [3:0] Button;
+    input CLK;
+   output [3:0] COM;
+   output [6:0] SEG;
+   
+   wire [7:0] LED;
+   wire XLXN_2;
+   wire [1:0] XLXN_10;
+   
+   HEXto7Seg2Digit_MUSER_ALU  XLXI_1 (.CLK(XLXN_2), 
+                                     .HEX(LED[7:0]), 
+                                     .COM(COM[3:0]), 
+                                     .SEG(SEG[6:0]));
+   ClockDivider_MUSER_ALU  XLXI_2 (.ClockIn(CLK), 
+                                  .CLK7Seg(XLXN_2));
+   ALUselect_MUSER_ALU  XLXI_3 (.A(A[7:0]), 
+                               .B(B[7:0]), 
+                               .S(XLXN_10[1:0]), 
+                               .R(LED[7:0]));
+   ModeSelect_MUSER_ALU  XLXI_4 (.Button(Button[3:0]), 
+                                .Mode(XLXN_10[1:0]));
+endmodule
