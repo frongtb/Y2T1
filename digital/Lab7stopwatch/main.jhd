@@ -1,0 +1,3 @@
+MODULE main
+	SUBMODULE StopWatch
+		INSTANCE XLXI_6

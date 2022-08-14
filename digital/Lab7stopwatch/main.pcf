@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Nov 19 18:59:39 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Segment<5>" LOCATE = SITE "P29" LEVEL 1;
+COMP "Segment<6>" LOCATE = SITE "P27" LEVEL 1;
+COMP "Segment<7>" LOCATE = SITE "P26" LEVEL 1;
+COMP "BTN_Control" LOCATE = SITE "P47" LEVEL 1;
+PIN BTN_Control_pin<0> = BEL "BTN_Control" PINNAME PAD;
+PIN "BTN_Control_pin<0>" CLOCK_DEDICATED_ROUTE;
+COMP "CLK_20MHz" LOCATE = SITE "P123" LEVEL 1;
+COMP "Common<0>" LOCATE = SITE "P44" LEVEL 1;
+COMP "Common<1>" LOCATE = SITE "P43" LEVEL 1;
+COMP "Common<2>" LOCATE = SITE "P33" LEVEL 1;
+COMP "Common<3>" LOCATE = SITE "P30" LEVEL 1;
+COMP "Segment<0>" LOCATE = SITE "P41" LEVEL 1;
+COMP "Segment<1>" LOCATE = SITE "P40" LEVEL 1;
+COMP "Segment<2>" LOCATE = SITE "P35" LEVEL 1;
+COMP "BTN_Reset" LOCATE = SITE "P46" LEVEL 1;
+PIN BTN_Reset_pin<0> = BEL "BTN_Reset" PINNAME PAD;
+PIN "BTN_Reset_pin<0>" CLOCK_DEDICATED_ROUTE;
+COMP "Segment<3>" LOCATE = SITE "P34" LEVEL 1;
+COMP "Segment<4>" LOCATE = SITE "P32" LEVEL 1;
+SCHEMATIC END;
+
