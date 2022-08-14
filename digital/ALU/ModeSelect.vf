@@ -1,0 +1,93 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ModeSelect.vf
+// /___/   /\     Timestamp : 11/14/2021 19:46:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Digi/ALU/ModeSelect.vf -w "C:/Users/Mr.Supakorn Thongbor/Downloads/Lab9.ALU/ModeSelect.sch"
+//Design Name: ModeSelect
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FD4CE_HXILINX_ModeSelect(Q0, Q1, Q2, Q3, C, CE, CLR, D0, D1, D2, D3);
+   
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   input              D0;
+   input              D1;
+   input              D2;
+   input              D3;
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+          {Q3, Q2, Q1, Q0} <= {D3, D2, D1, D0};
+     end
+   
+   
+endmodule
+`timescale 1ns / 1ps
+
+module ModeSelect(Button, 
+                  Mode);
+
+    input [3:0] Button;
+   output [1:0] Mode;
+   
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_32;
+   
+   (* HU_SET = "XLXI_1_39" *) 
+   FD4CE_HXILINX_ModeSelect  XLXI_1 (.C(XLXN_23), 
+                                    .CE(XLXN_24), 
+                                    .CLR(XLXN_25), 
+                                    .D0(Button[0]), 
+                                    .D1(Button[1]), 
+                                    .D2(Button[2]), 
+                                    .D3(Button[3]), 
+                                    .Q0(), 
+                                    .Q1(XLXN_32), 
+                                    .Q2(XLXN_27), 
+                                    .Q3(XLXN_28));
+   OR4  XLXI_2 (.I0(Button[3]), 
+               .I1(Button[2]), 
+               .I2(Button[1]), 
+               .I3(Button[0]), 
+               .O(XLXN_23));
+   VCC  XLXI_3 (.P(XLXN_24));
+   GND  XLXI_4 (.G(XLXN_25));
+   OR2  XLXI_7 (.I0(XLXN_28), 
+               .I1(XLXN_32), 
+               .O(Mode[0]));
+   OR2  XLXI_8 (.I0(XLXN_28), 
+               .I1(XLXN_27), 
+               .O(Mode[1]));
+endmodule

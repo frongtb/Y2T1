@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : main.vf
+// /___/   /\     Timestamp : 11/14/2021 20:03:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Digi/ALU/main.vf -w C:/Digi/ALU/main.sch
+//Design Name: main
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module main(CLK, 
+            DIP, 
+            PB, 
+            SW, 
+            COM, 
+            SEG);
+
+    input CLK;
+    input [7:0] DIP;
+    input [3:0] PB;
+    input [7:0] SW;
+   output [3:0] COM;
+   output [6:0] SEG;
+   
+   
+   ALU  XLXI_1 (.A(SW[7:0]), 
+               .B(DIP[7:0]), 
+               .Button(PB[3:0]), 
+               .CLK(CLK), 
+               .COM(COM[3:0]), 
+               .SEG(SEG[6:0]));
+endmodule
