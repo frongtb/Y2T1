@@ -1,0 +1,3 @@
+verilog work "ffcount.vf"
+verilog work "bcdtosevenseg.vf"
+verilog work "main.vf"

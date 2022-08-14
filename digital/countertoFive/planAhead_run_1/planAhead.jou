@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon Nov 22 17:01:10 2021
+# Process ID: 23484
+# Log file: C:/Digi/countertoFive/planAhead_run_1/planAhead.log
+# Journal file: C:/Digi/countertoFive/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Digi/countertoFive/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P41 [get_ports XLXN_10]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports XLXN_11]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports XLXN_13]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports XLXN_14]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports XLXN_19]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports XLXN_21]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports XLXN_22]
+endgroup
+set_property package_pin "" [get_ports [list  y]]
+startgroup
+set_property package_pin P27 [get_ports XLXN_22]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports x]
+endgroup
+startgroup
+set_property package_pin P56 [get_ports y]
+endgroup
+startgroup
+set_property package_pin P57 [get_ports z]
+endgroup
+save_constraints
