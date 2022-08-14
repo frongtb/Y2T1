@@ -1,0 +1,496 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: lab66.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "lab66.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "lab66"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : lab66
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\folnw\lab66\lab66.vf" into library work
+Parsing module <FJKC_HXILINX_lab66>.
+Parsing module <lab66>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <lab66>.
+
+Elaborating module <VCC>.
+
+Elaborating module <FJKC_HXILINX_lab66>.
+
+Elaborating module <AND2>.
+
+Elaborating module <AND3>.
+
+Elaborating module <INV>.
+
+Elaborating module <OR3>.
+
+Elaborating module <OR4>.
+
+Elaborating module <OR5>.
+
+Elaborating module <OR2>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <AND4B4>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <lab66>.
+    Related source file is "C:\Users\folnw\lab66\lab66.vf".
+    Set property "HU_SET = XLXI_33_0" for instance <XLXI_33>.
+    Set property "HU_SET = XLXI_34_1" for instance <XLXI_34>.
+    Set property "HU_SET = XLXI_42_3" for instance <XLXI_42>.
+    Set property "HU_SET = XLXI_43_2" for instance <XLXI_43>.
+    Set property "HU_SET = XLXI_475_4" for instance <XLXI_475>.
+    Set property "HU_SET = XLXI_476_5" for instance <XLXI_476>.
+    Set property "HU_SET = XLXI_484_6" for instance <XLXI_484>.
+    Set property "HU_SET = XLXI_486_7" for instance <XLXI_486>.
+    Summary:
+	no macro.
+Unit <lab66> synthesized.
+
+Synthesizing Unit <FJKC_HXILINX_lab66>.
+    Related source file is "C:\Users\folnw\lab66\lab66.vf".
+        INIT = 1'b0
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKC_HXILINX_lab66> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ 1-bit register                                        : 8
+# Multiplexers                                         : 16
+ 1-bit 2-to-1 multiplexer                              : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 16
+ 1-bit 2-to-1 multiplexer                              : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <lab66> ...
+
+Optimizing unit <FJKC_HXILINX_lab66> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block lab66, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : lab66.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 116
+#      AND2                        : 36
+#      AND3                        : 4
+#      AND4B4                      : 1
+#      INV                         : 46
+#      LUT2                        : 4
+#      LUT3                        : 6
+#      OR2                         : 2
+#      OR3                         : 4
+#      OR4                         : 6
+#      OR5                         : 2
+#      VCC                         : 1
+#      XOR2                        : 4
+# FlipFlops/Latches                : 8
+#      FDC                         : 4
+#      FDCE                        : 4
+# IO Buffers                       : 27
+#      IBUF                        : 4
+#      OBUF                        : 23
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               8  out of  11440     0%  
+ Number of Slice LUTs:                   56  out of   5720     0%  
+    Number used as Logic:                56  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     64
+   Number with an unused Flip Flop:      56  out of     64    87%  
+   Number with an unused LUT:             8  out of     64    12%  
+   Number of fully used LUT-FF pairs:     0  out of     64     0%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    102    26%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK(XLXI_692:O)                    | NONE(*)(XLXI_486/Q)    | 4     |
+CLK2(XLXI_693:O)                   | NONE(*)(XLXI_43/Q)     | 4     |
+-----------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.039ns (Maximum Frequency: 247.558MHz)
+   Minimum input arrival time before clock: 2.454ns
+   Maximum output required time after clock: 7.592ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.039ns (frequency: 247.558MHz)
+  Total number of paths / destination ports: 23 / 6
+-------------------------------------------------------------------------
+Delay:               4.039ns (Levels of Logic = 3)
+  Source:            XLXI_486/Q (FF)
+  Destination:       XLXI_476/Q (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_486/Q to XLXI_476/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             22   0.447   1.498  Q (Q)
+     end scope: 'XLXI_486:Q'
+     AND2:I0->O            4   0.203   0.788  XLXI_478 (XLXN_603)
+     begin scope: 'XLXI_476:J'
+     LUT2:I0->O            1   0.203   0.579  _n0008_inv1 (_n0008_inv)
+     FDCE:CE                   0.322          Q
+    ----------------------------------------
+    Total                      4.039ns (1.175ns logic, 2.864ns route)
+                                       (29.1% logic, 70.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK2'
+  Clock period: 4.039ns (frequency: 247.558MHz)
+  Total number of paths / destination ports: 23 / 6
+-------------------------------------------------------------------------
+Delay:               4.039ns (Levels of Logic = 3)
+  Source:            XLXI_42/Q (FF)
+  Destination:       XLXI_34/Q (FF)
+  Source Clock:      CLK2 rising
+  Destination Clock: CLK2 rising
+
+  Data Path: XLXI_42/Q to XLXI_34/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             22   0.447   1.498  Q (Q)
+     end scope: 'XLXI_42:Q'
+     AND2:I0->O            4   0.203   0.788  XLXI_36 (XLXN_62)
+     begin scope: 'XLXI_34:J'
+     LUT2:I0->O            1   0.203   0.579  _n0008_inv1 (_n0008_inv)
+     FDCE:CE                   0.322          Q
+    ----------------------------------------
+    Total                      4.039ns (1.175ns logic, 2.864ns route)
+                                       (29.1% logic, 70.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.454ns (Levels of Logic = 2)
+  Source:            CLR (PAD)
+  Destination:       XLXI_486/Q (FF)
+  Destination Clock: CLK rising
+
+  Data Path: CLR to XLXI_486/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   0.802  CLR_IBUF (CLR_IBUF)
+     begin scope: 'XLXI_486:CLR'
+     FDC:CLR                   0.430          Q
+    ----------------------------------------
+    Total                      2.454ns (1.652ns logic, 0.802ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK2'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.454ns (Levels of Logic = 2)
+  Source:            CLR (PAD)
+  Destination:       XLXI_43/Q (FF)
+  Destination Clock: CLK2 rising
+
+  Data Path: CLR to XLXI_43/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.222   0.802  CLR_IBUF (CLR_IBUF)
+     begin scope: 'XLXI_43:CLR'
+     FDCE:CLR                  0.430          Q
+    ----------------------------------------
+    Total                      2.454ns (1.652ns logic, 0.802ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 50 / 12
+-------------------------------------------------------------------------
+Offset:              7.592ns (Levels of Logic = 5)
+  Source:            XLXI_486/Q (FF)
+  Destination:       A1 (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_486/Q to A1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             22   0.447   1.133  Q (Q)
+     end scope: 'XLXI_486:Q'
+     INV:I->O              1   0.568   0.944  XLXI_528 (XLXN_685)
+     AND2:I0->O            1   0.203   0.924  XLXI_519 (XLXN_694)
+     OR3:I1->O             1   0.223   0.579  XLXI_522 (B1_OBUF)
+     OBUF:I->O                 2.571          B1_OBUF (B1)
+    ----------------------------------------
+    Total                      7.592ns (4.012ns logic, 3.580ns route)
+                                       (52.8% logic, 47.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK2'
+  Total number of paths / destination ports: 50 / 12
+-------------------------------------------------------------------------
+Offset:              7.592ns (Levels of Logic = 5)
+  Source:            XLXI_42/Q (FF)
+  Destination:       A2 (PAD)
+  Source Clock:      CLK2 rising
+
+  Data Path: XLXI_42/Q to A2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             22   0.447   1.133  Q (Q)
+     end scope: 'XLXI_42:Q'
+     INV:I->O              1   0.568   0.944  XLXI_286 (XLXN_363)
+     AND2:I0->O            1   0.203   0.924  XLXI_277 (XLXN_373)
+     OR3:I1->O             1   0.223   0.579  XLXI_280 (B2_OBUF)
+     OBUF:I->O                 2.571          B2_OBUF (B2)
+    ----------------------------------------
+    Total                      7.592ns (4.012ns logic, 3.580ns route)
+                                       (52.8% logic, 47.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.039|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK2           |    4.039|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.55 secs
+ 
+--> 
+
+Total memory usage is 4486132 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
